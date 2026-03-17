@@ -1,0 +1,71 @@
+Execute this workflow:
+
+prompt = "
+I need to personalize the bolded section of a cold outreach email. I am sending this to the University Recruiting / Talent Acquisition team at [Insert Company Name] to invite them to sponsor an AI hackathon at the University of Michigan.
+
+Rewrite only the text between the double asterisks (**).
+
+Guidelines for the rewrite:
+
+Audience Focus: Speak directly to a recruiter's goals (finding top-tier AI talent, filling their hiring pipeline).
+
+Personalized: Tie it specifically to [Insert Company Name]'s work in [Insert 1-2 words about their niche, e.g., cloud computing, consumer AI, autonomous vehicles], without sounding like a generic marketing brochure.
+
+Tone: Snappy, concise, and seamlessly matching the casual but professional tone of the rest of the email. Keep it to one fluid sentence.
+
+Here is the email:
+Hi [name]! 
+
+My friend Rishab (who hosted NexHacks) at UMich passed along your contact, and I’m reaching out because I know **[company name] is always looking to connect with top technical candidates.**
+
+I'm organizing JacHacks, a 24-hour AI hackathon on April 4-5th at the University of Michigan. The event is already backed by NVIDIA, NSF, and spearheaded by UMich Professor Jason Mars (whose previous AI ventures reached 20M+ users and raised >62M in funding). 
+
+The 200+ builders will be using Jac, a pythonic AI-native programming language that unifies frontend+backend+AI.
+
+I’d love to get [company name] involved. We have great opportunities for your recruiting team to get direct access to this pipeline, including early resume book access, recruiting tables, sending technical mentors, and sponsored challenges.
+
+Do you have 10 minutes this week to see if there's a good fit here? Happy to send over the sponsorship packages if you'd like to take a look first.
+
+Best,
+Vatsal
+"
+
+
+company_contacts = the <list of  emails> tag text (each of size 2)
+
+final_response = ""
+
+for company, contact in emails: 
+    response = apply_prompt(prompt, company, contact)
+    final_response += f"{company}: \n{response}\n"
+
+print(final_response)
+
+Give me final_response
+
+<list of emails>
+
+Sponsor
+Contact
+
+
+MLH
+maria@majorleaguehacking.com
+
+
+Pear VC
+harris@pear.vc
+
+
+a16z
+Robin Guo (no longer there)
+
+
+Wispr Flow
+tanay@wispr.ai, sahar@wispr.ai
+
+
+Afore Capital
+sohum
+
+.....
