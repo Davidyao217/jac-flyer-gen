@@ -105,7 +105,7 @@ def main():
     scales = [scale * total_scale for scale in scales]
 
     y_positions = [920, 923, 910, 905]
-    x_positions = [123, 345, 566, 788]
+    x_positions = [113, 335, 556, 778]
         
     sponsor_tags = []
     for i, sponsor in enumerate(sponsors):
