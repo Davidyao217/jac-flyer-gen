@@ -37,8 +37,9 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {
     {building_paths}
   </g>
 
+
   <!-- Title Block — centred on canvas -->
-  <g transform="translate(102, -30) scale(0.95)">
+  <g transform="translate(50, -30) scale(0.95)">
     <!-- "J" logo -->
     <g transform="translate(80, 140) scale(0.25)">
       <path d="M 681.89,42.24 A 8.00,8.00 0 0,1 694.00,49.11 L 694.00,590.45 A 82.00,82.00 0 0,1 652.73,661.62 L 382.87,816.06 A 28.00,28.00 0 0,1 355.11,816.09 L 85.43,662.59 A 82.00,82.00 0 0,1 44.00,591.32 L 44.00,438.48 A 45.00,45.00 0 0,1 67.15,399.14 L 149.11,353.60 A 8.00,8.00 0 0,1 161.00,360.60 L 161.00,538.50 A 58.00,58.00 0 0,0 190.02,588.74 L 356.51,684.79 A 25.00,25.00 0 0,0 381.49,684.79 L 547.98,588.74 A 58.00,58.00 0 0,0 577.00,538.50 L 577.00,130.52 A 45.00,45.00 0 0,1 598.90,91.90 Z" fill="#F05E39" />
@@ -52,7 +53,7 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {
     </text>
     <!-- "ac" and "Hacks" -->
     <g transform="translate(30, 40)">
-      <text class="text ac-text" x="240" y="260">ac</text>
+      <text class="text ac-text" x="240" y="260">acHacks</text>
     </g>
   </g>
 
@@ -90,13 +91,13 @@ def main():
         "clean_assets/blank.svg",
         "clean_assets/lovable-logo-icon.svg",
         "clean_assets/michigan_block.svg",
+        "clean_assets/base44.png",
+        "clean_assets/wip.png",
+        "clean_assets/backboard.png",
         "clean_assets/Anthropic_logo.svg",
         "clean_assets/nvidia_logo.svg",
         "clean_assets/nsf_bw-removebg-preview.png",
-        "clean_assets/backboard.png",
         "clean_assets/monster.png",
-        "clean_assets/wip.png",
-        "clean_assets/base44.png",
         "clean_assets/insforge.svg",
         "clean_assets/mastra.svg",
         "clean_assets/mdst.png",
@@ -104,7 +105,7 @@ def main():
     ]
     
     # Scaling settings
-    scales = [1.0, 1.0, 1.0, 0.9, 1.0, 1.3, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.3]
+    scales = [1.0, 1.0, 1.0, 0.9, 1.0, 1.0, 1.0, 1.0, 1.3, 1.0, 1.0, 1.0, 1.0, 1.0, 1.3]
     total_scale = 0.8
     base_width = 140
     base_height = 70
