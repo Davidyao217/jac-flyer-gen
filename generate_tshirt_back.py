@@ -51,9 +51,8 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {
       <tspan x="180" dy="70">I</tspan>
     </text>
     <!-- "ac" and "Hacks" -->
-    <g transform="translate(30, 40) skewX(-10) translate(40, 0)">
+    <g transform="translate(30, 40)">
       <text class="text ac-text" x="240" y="260">ac</text>
-      <text class="text hacks-text" x="270" y="440">Hacks</text>
     </g>
   </g>
 

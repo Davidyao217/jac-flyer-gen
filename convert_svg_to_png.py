@@ -76,4 +76,4 @@ def convert_svg_high_res(input_svg, output_file, format_type='png', scale_factor
 # ==========================================
 # Run the conversion:
 # ==========================================
-convert_svg_high_res('output/tshirt_graphic_back.svg', 'output/tshirt_graphic_back.png', 'png', scale_factor=4)
+convert_svg_high_res('output/tshirt_graphic_back.svg', 'output/tshirt_graphic_back_jac_cream_no_skew.png', 'png', scale_factor=4)
