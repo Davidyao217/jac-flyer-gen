@@ -20,7 +20,7 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {
       .j-logo {{ font-size: 380px; letter-spacing: -10px; }}
       .ac-text {{ font-size: 200px; font-weight: 500;}}
       .hacks-text {{ font-size: 200px; font-weight: 500;}}
-      .aseci-text {{ fill: #F05E39; font-family: Rajdhani; font-size: 80px; text-anchor: middle; stroke: #F05E39; stroke-width: 5px; }}
+      .aseci-text {{ fill: #FFFDD0; font-family: Rajdhani; font-size: 115px; text-anchor: middle; stroke: #FFFDD0; stroke-width: 5px; }}
       .building {{ stroke: #F05E39; stroke-width: 3; fill: none; opacity: 1; stroke-linecap: round; stroke-linejoin: round; }}
     </style>
     <filter id="creamTint" color-interpolation-filters="sRGB">
@@ -37,20 +37,18 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {
     {building_paths}
   </g>
 
-
   <!-- Title Block — centred on canvas -->
   <g transform="translate(50, -30) scale(0.95)">
-    <!-- "J" logo -->
+    <!-- "J" logo --> 
     <g transform="translate(80, 140) scale(0.25)">
       <path d="M 681.89,42.24 A 8.00,8.00 0 0,1 694.00,49.11 L 694.00,590.45 A 82.00,82.00 0 0,1 652.73,661.62 L 382.87,816.06 A 28.00,28.00 0 0,1 355.11,816.09 L 85.43,662.59 A 82.00,82.00 0 0,1 44.00,591.32 L 44.00,438.48 A 45.00,45.00 0 0,1 67.15,399.14 L 149.11,353.60 A 8.00,8.00 0 0,1 161.00,360.60 L 161.00,538.50 A 58.00,58.00 0 0,0 190.02,588.74 L 356.51,684.79 A 25.00,25.00 0 0,0 381.49,684.79 L 547.98,588.74 A 58.00,58.00 0 0,0 577.00,538.50 L 577.00,130.52 A 45.00,45.00 0 0,1 598.90,91.90 Z" fill="#F05E39" />
     </g>
-    <text class="aseci-text" x="185" y="420">
-      <tspan x="190" dy="0">A</tspan>
-      <tspan x="190" dy="70">S</tspan>
-      <tspan x="190" dy="70">E</tspan>
-      <tspan x="190" dy="70">C</tspan>
-      <tspan x="180" dy="70">I</tspan>
-    </text>
+    <g transform="translate(280, 550)">
+       <g transform="translate(-260, -90) scale(0.2)">
+         <path fill-rule="evenodd" d="M 248 39 L 233 45 L 74 137 L 63 147 L 59 153 L 55 165 L 55 365 L 57 372 L 63 383 L 76 394 L 235 486 L 249 491 L 264 491 L 279 485 L 441 391 L 452 379 L 457 365 L 457 165 L 451 150 L 442 140 L 416 125 L 416 357 L 262 447 L 255 450 L 101 361 L 96 357 L 96 173 L 256 80 L 334 125 L 334 304 L 256 350 L 181 307 L 178 304 L 178 225 L 176 225 L 147 238 L 141 244 L 138 250 L 137 315 L 142 328 L 153 338 L 236 386 L 250 392 L 263 392 L 273 388 L 361 337 L 367 332 L 373 322 L 375 315 L 375 101 L 273 42 L 263 39 Z" fill="#F05E39" stroke="none"/>
+       </g>
+       <text class="aseci-text" x="10" y="0">JASECI</text>
+    </g>
     <!-- "ac" and "Hacks" -->
     <g transform="translate(30, 40)">
       <text class="text ac-text" x="240" y="260">acHacks</text>
@@ -110,10 +108,10 @@ def main():
     base_width = 140
     base_height = 70
 
-    offset = {5: (-10, -10), 14: (-10, -10)}
+    offset = {6: (-10, -10), 14: (-10, -10)}
 
     # Grid Settings
-    GRID_START_X = 45   # Top-left corner X of the entire grid
+    GRID_START_X = 30   # Top-left corner X of the entire grid
     GRID_START_Y = 600  # Top-left corner Y of the entire grid
     CELL_WIDTH = 180    # Horizontal space allocated per logo
     CELL_HEIGHT = 100   # Vertical space allocated per logo
